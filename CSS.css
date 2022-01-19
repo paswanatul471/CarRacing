@@ -1,0 +1,341 @@
+/* CSS Resest */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variable */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/* Navigation Bar logo and images */
+#logo{
+    margin: 4px 8px;
+}
+#logo img{
+    height: 52px;
+    width: 45px;
+    margin: 5px 7px;
+
+}
+
+/* Navigation bar list styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#navbar ul li{
+    color: rgb(176, 236, 11);
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 4px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    height: 276px;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('car1.jpg') no-repeat center center/cover;
+    height: 450px;
+    top: 0px;
+    lext: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* section class */
+#services{
+    margin: 30px;
+    display: flex;
+}
+#services .box{
+    border: 1px solid #9f9191;
+    border-radius: 11px;
+    padding: 30px;
+    margin: 5px 7px;
+    background-color: #edecec52;
+
+}
+
+#services1 .box img{
+    height: 163px;
+    width: 304px;
+    margin: auto;
+    display: block;
+}
+#services1{
+    margin: 30px;
+    display: flex;
+}
+#services1 .box{
+    border: 1px solid #9f9191;
+    border-radius: 11px;
+    padding: 30px;
+    margin: 4px 7px;
+    background-color: #edecec52;;
+
+}
+
+#services .box img{
+    height: 163px;
+    width: 304px;
+    margin: auto;
+    display: block;
+}
+/* section for riding package */
+#package{
+     /* border: 2px solid red;  */
+    margin: 48px 10px;
+}
+#primary_package{
+    margin: 10px;
+    display: flex;
+}
+#h1-package{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+.one_item{
+    text-decoration: none;
+}
+.one_item li{
+    text-decoration: none;
+}
+.list-2{
+    background-color: #fef8f1;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 169px;
+    width: 174px;
+    margin: auto;
+    display: block;
+    padding: 22px 82px;
+}
+#primary_package ul li{
+    text-decoration: none;
+    color:#930000;
+    margin: 2px;
+}
+.pack_heding{
+    font-size: 20px;
+    padding: 10px;
+}
+/* optional section */
+#optional::before{
+    content: "";
+    position: absolute;
+    background: url('car9.jpg') no-repeat center center/cover;
+    height: 35%;
+    width: 79%;
+    margin: 0px 132px;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+.h2-primary{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 46px;
+    color: white;
+
+}
+
+
+/* Utility classess */
+#home h1{
+    color: white ;
+    text-align: center;
+}
+.h1-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    justify-content: center;
+    
+}
+.h1-primary{
+    font-size: 2.1rem;
+    padding: 12px;
+    
+}
+#home p{
+    color: #b00ce5;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Baloo 2', cursive;
+}
+.btn{
+    padding: 10px 50px;
+    border: 2px solid black;
+    background: #35364878;
+    color: white;
+    border-radius: 15px;
+    margin: 17px;
+    cursor: pointer;
+}
+.btn1{
+    padding: 11px 39px;
+    border: 1px solid black;
+    background: #35364878;
+    color: white;
+    border-radius: 6px;
+    margin: 17px 96px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.btn3{
+    padding: 9px 12px;
+    border: 1px solid black;
+    background: #a10000;
+    color: white;
+    border-radius: 6px;
+    margin: 15px 31px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+/* client section */
+.h1-primary center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#client-section{
+    position: relative;
+    height: 200px;
+    
+}
+/* background image  */
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('./background\ logo.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4rem;
+}
+.client-item{
+    padding: 7px;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 100px;
+}
+/* contact us */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8rem;
+    background: url('./contact\ us\ 1.jpg');
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.form-group{
+    width: 400px;
+}
+.form-group label{
+    font-size: 20px
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .4rem;
+    border-radius: 9px;
+    font-size: 1,1rem;
+
+}
+/* top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 8px;
+    z-index: 99;
+    border: none;
+    outline: 0;
+    background-color: #369966;
+    color: #fff;
+    cursor: pointer;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 20px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+}
+
